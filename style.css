@@ -1,0 +1,90 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #3a3a3a;
+}
+
+.banner {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    font-weight: 900;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px #cc5241;
+}
+
+.banner::before {
+    content: "??? ";
+}
+
+.banner::after {
+    content: " ???";
+}
+
+input, button {
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 3px solid #ff6f61;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(255,111,97,0.5);
+    background-color: white;
+}
+
+input:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 12px 4px #ff6f61;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #ff4433;
+}
+
+button:hover {
+    background-color: #ff3a1a;
+    box-shadow: 0 8px 20px #ff2a00;
+}
+
+.progress-container {
+    width: 80%;
+    background: #fff4f1;
+    border-radius: 30px;
+    margin: 30px auto;height: 25px;
+    box-shadow: inset 0 2px 6px rgba(255,111,97,0.3);
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff6f61, #ff3a1a);
+    border-radius: 30px;
+    transition: width 0.3s ease;
+}
+
+pre {
+    background-color: #fff0f0;
+    padding: 25px;
+    border: 3px solid #ff6f61;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: #7f2a1a;
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.5);
+}
+
+/* Ajout d’emoji au bouton */
+#scanBtn::before {
+    content: "?? ";
+}
